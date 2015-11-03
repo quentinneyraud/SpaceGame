@@ -1,0 +1,202 @@
+/*GENERAL*/
+
+
+*{
+    outline : none;
+    font-family: trebuchet MS;
+}
+
+html{
+    background-color : rgba(0,0,0,0.5);
+}
+
+input{
+    border: none;
+}
+
+#keypad, #screen{
+    display : none;
+}
+
+
+
+/*NOTIFICATION*/
+
+
+#notification{
+    position : absolute;
+    width : 100%;
+    height : 100px;
+    top : -100px;
+    left : 0;
+    text-align : center;
+    display : table;
+    z-index : 100;
+}
+
+#notificationText{
+    display : table-cell;
+    vertical-align : middle;
+    font-size : 1.5em;
+    text-transform : small-caps;
+}
+
+
+
+/*TURN SCREEN*/
+
+
+#turnScreen{
+    display: none;
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:200;
+    background-color : red;
+}
+
+
+@media only screen and (orientation:portrait){
+    #turnScreen{
+        display : block;
+    }
+}
+
+
+
+/*PRESENTATION JEU*/
+
+
+#presentation{
+    height: 90%;
+    width: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+    box-shadow: 10px 10px 0 0 #999;
+}
+
+#presentationImg{
+    height: 100%;
+}
+
+#presentationButton{
+    position: absolute;
+    top : 10px;
+    right : 10px;
+    cursor: pointer;
+}
+
+
+
+/*INPUT GAME NAME*/
+
+
+#inputGame{
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    width: 35%;
+    font-size: 2.5em;
+    top: 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+}
+
+@media only screen and (orientation:landscape){
+    #inputGame{
+        width: 50%;
+        font-size: 1.5em;
+    }
+}
+
+
+
+/*SCREEN*/
+
+
+#screen{
+    position : absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color : rgba(0,0,0,1);
+    opacity : 0;
+}
+
+.ennemi{
+    position : absolute;
+    z-index : 3;
+}
+
+#count{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    font-size : 2.5em;
+    color : #fff;
+}
+
+.faisceau{
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    background-color: red;
+    box-shadow: 0 0 10px 6px red;
+    z-index : 1;
+}
+
+#vaisseau{
+    position : absolute;
+    left : 50%;
+    top : 50%;
+}
+
+#gameTitle{
+    text-align: center;
+}
+
+#power{
+    color : #fff;
+    position : absolute;
+    top : 10px;
+    right : 10px;
+}
+
+
+/*KEYPAD*/
+
+
+#aButton, #bButton{
+    position: absolute;
+    top: 30%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#aButton{
+    background-color : rgb(10, 202, 10);
+      box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    right : 10%;
+}
+
+#bButton{
+    background-color : red;
+      box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+    left : 10%;
+}
+
+
+    
+
