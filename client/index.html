@@ -12,41 +12,41 @@
       background-color : rgba(180, 180, 180, 0.5);
     }
   </style>
-  
+
   <body>
-    
+
     <div id="loader"></div>
-    
-    
+
+
     <div id="notification">
       <p id="notificationText"></p>
     </div>
-    
-    
-   
-    
+
+
+
+
     <div id="presentation" ng-hide="presentationShowing" >
-      <img src="img/presentation.png" id="presentationImg"></img>
-      <img src="img/close.png" ng-click="presentationShowing = true" id="presentationButton"></img>
+      <img src="/img/presentation.png" id="presentationImg"></img>
+      <img src="/img/close.png" ng-click="presentationShowing = true" id="presentationButton"></img>
     </div>
-    
+
     <div ng-controller="GameController">
       <form  ng-submit="submitGameName()" id="form">
         <input type="text" ng-model="gameName" placeholder="Nom du Jeu" id="inputGame">
       </form>
-    
+
       <h1 id="gameTitle"></h1>
-      
-      
-      
+
+
+
       <div id="screen">
         <h1 id="count"></h1>
         <p id="power"> Pouvoir : <span ng-bind="power"></span></p>
         <img src="img/vaisseau.png" id="vaisseau"></img>
       </div>
     </div>
-    
-    
+
+
     <div id="keypad">
        <div id="turnScreen">
         Tourner votre ecran en mode paysage
@@ -54,8 +54,8 @@
       <button id="aButton">A</button>
       <button id="bButton">B</button>
     </div>
-    
-    
+
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/angular.min.js"></script>
