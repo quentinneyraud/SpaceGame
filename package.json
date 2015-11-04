@@ -1,5 +1,5 @@
 {
-  "name": "Space Game",
+  "name": "SpaceGame",
   "version": "1.0.0",
   "description": "Projet perso - Jeu utilisant le portable comme manette grâce aux sockets",
   "main": "server.js",
