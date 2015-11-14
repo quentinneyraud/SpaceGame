@@ -10,7 +10,7 @@ $scope.power =0;
 
 
 
-var socket = io.connect(process.env.IP + ':' + process.env.PORT);
+var socket = io.connect();
 
 var notification = $('#notification');
 var mobile = false;
